@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Document</title>
+</head>
+<style>
+    footer {
+        height: 100px;
+        background-color: #4e89ae;
+    }
+
+    .box1 {
+        width: 100%;
+        height: 40px;
+        background-color: #00416d;
+        /* background-attachment: fixed; */
+        position: sticky;
+        top: 0;
+
+    }
+
+    .menu1 {
+        justify-content: flex-end;
+        left: 0;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .menu nav a {
+        padding: 10px;
+        /* text-decoration: none; */
+        color: #f1f3f8;
+    }
+
+    nav a:hover {
+        color: #00416d;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 100px;
+        background-color: #4e89ae;
+
+    }
+
+    .logo img {
+        width: 200px;
+        height: 100px;
+        /* padding: 10px; */
+        position: fixed;
+    }
+
+    .box3 {
+        width: 100%;
+        height: 40px;
+        background-color: #00416d;
+
+    }
+
+    .wrap {
+        width: 960px;
+        margin: auto;
+
+    }
+
+    .title {
+        text-align: center;
+        border-style: solid;
+    }
+
+    .group-item {
+        display: flex;
+    }
+
+    .group-item .item {
+        width: 200px;
+        margin: 10px;
+        background-color: #a2d5f2;
+    }
+
+    .group-item .item img {
+        width: 100%;
+    }
+
+    .wrap1 {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .item1 {
+        width: 580px;
+        border: 1px solid crimson;
+        /* padding: 10px; */
+        box-sizing: border-box;
+        display: flex;
+        margin: 10px;
+    }
+
+    .item1 img {
+        width: 100%;
+
+    }
+
+    .pic {
+        width: 50%;
+        padding: 10px;
+
+    }
+
+    .txt {
+        width: 50%;
+        padding: 10px;
+
+    }
+
+
+    .left {
+        width: 100%;
+        background-color: #a2d5f2;
+        padding: 10px;
+        margin: auto;
+        display: flex;
+
+    }
+
+    .card {
+        width: 1200px;
+        background-color: red;
+        position: relative;
+        display: flex;
+        /* margin: 10px; */
+        margin: auto;
+        flex-wrap: wrap;
+
+    }
+
+    .card img {
+        vertical-align: top;
+    }
+
+    .card .txt {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        display: none;
+    }
+
+    .card:hover .txt {
+        display: block;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="box1">
+            <div class="menu">
+                <nav>
+                    <a href="#">登入</a>
+                    <a href="#">註冊</a>
+                    <a href="#">關於我們</a>
+                    <a href="#">聯絡我們</a>
+                </nav>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="logo">
+                <a href="#"><img src="https://img.inmywordz.com/uploads/20170522210649_17.jpg"></a>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="menu">
+                <nav>
+                    <a href="#">首頁</a>
+                    <a href="#">信箱</a>
+                    <a href="#">新聞</a>
+                    <a href="#">股市</a>
+                    <a href="#">氣象</a>
+                    <a href="#">運動</a>
+                    <a href="#">Yahoo TV</a>
+                    <a href="#">娛樂</a>
+                    <a href="#">購物中心</a>
+                    <a href="#">商城</a>
+                    <a href="#">拍賣</a>
+                </nav>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="title">
+                <h2>title</h2>
+            </div>
+            <div class="group-item">
+                <div class="item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvLcvlgxxjX67zlyGjEH4o3AZion-7KkK9Yg&usqp=CAU">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum officia accusantium, sint dolor
+                        qui,
+                        architecto non dolore numquam inventore aperiam saepe doloremque veniam ducimus. At provident
+                        autem
+                        sunt
+                        expedita id!</p>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvLcvlgxxjX67zlyGjEH4o3AZion-7KkK9Yg&usqp=CAU">
+                    <h3>title</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nesciunt, error quos tempore rerum
+                        quam
+                        animi
+                        minus. Nam, ad, eos accusamus optio ullam quis corrupti vero eaque odio porro molestias.</p>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvLcvlgxxjX67zlyGjEH4o3AZion-7KkK9Yg&usqp=CAU">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate saepe hic molestias
+                        alias
+                        vel
+                        commodi minima vitae, repudiandae tenetur aliquid fugiat odio non eaque! Incidunt adipisci
+                        provident
+                        ab
+                        vel.
+                    </p>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvLcvlgxxjX67zlyGjEH4o3AZion-7KkK9Yg&usqp=CAU">
+                    <h3>title</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nesciunt, error quos tempore rerum
+                        quam
+                        animi
+                        minus. Nam, ad, eos accusamus optio ullam quis corrupti vero eaque odio porro molestias.</p>
+                </div>
+                <div class="item">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSvLcvlgxxjX67zlyGjEH4o3AZion-7KkK9Yg&usqp=CAU">
+                    <h3>title</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nesciunt, error quos tempore rerum
+                        quam
+                        animi
+                        minus. Nam, ad, eos accusamus optio ullam quis corrupti vero eaque odio porro molestias.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrap1">
+            <div class="item1">
+                <div class="pic">
+                    <img src="https://cnews.com.tw/wp-content/uploads/%E6%9C%AA%E5%91%BD%E5%90%8D-5-7.jpg" alt=""></div>
+                <div class="txt">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, veniam ad deleniti quasi
+                        perspiciatis
+                        perspiciatis necessitatibus quas.</p>
+                </div>
+            </div>
+            <div class="item1">
+                <div class="pic">
+                    <img src="https://cnews.com.tw/wp-content/uploads/%E6%9C%AA%E5%91%BD%E5%90%8D-5-7.jpg" alt=""></div>
+                <div class="txt">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, veniam ad deleniti quasi
+                        perspiciatis
+                        perspiciatis necessitatibus quas.</p>
+                </div>
+            </div>
+            <div class="item1">
+                <div class="pic">
+                    <img src="https://cnews.com.tw/wp-content/uploads/%E6%9C%AA%E5%91%BD%E5%90%8D-5-7.jpg" alt=""></div>
+                <div class="txt">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, veniam ad deleniti quasi
+                        perspiciatis
+                        perspiciatis necessitatibus quas.</p>
+                </div>
+            </div>
+            <div class="item1">
+                <div class="pic">
+                    <img src="https://cnews.com.tw/wp-content/uploads/%E6%9C%AA%E5%91%BD%E5%90%8D-5-7.jpg" alt=""></div>
+                <div class="txt">
+                    <h3>title</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, veniam ad deleniti quasi
+                        perspiciatis
+                        perspiciatis necessitatibus quas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="warp3">
+            <div class="left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis expedita assumenda culpa laborum,
+                    placeat, soluta, minima alias accusantium quae nisi in numquam. Praesentium recusandae ut at
+                    voluptas
+                    voluptatum quisquam quidem.</p>
+                <p>Ad doloribus reiciendis eveniet architecto vel nemo nam quibusdam. Magnam dignissimos ratione vero
+                    repellendus quae reiciendis impedit maxime quaerat id ex porro quibusdam autem voluptatum est
+                    laborum,
+                    modi dolorem. Optio!</p>
+                <p>Illum ex repudiandae nesciunt hic, ipsam, sunt necessitatibus saepe eligendi iure eveniet, fugit
+                    labore
+                    quae explicabo dicta ad. Autem neque hic libero eos dolorem, nihil ex! Perferendis voluptatem magni
+                    cum.
+                </p>
+                <p>Culpa velit ex ab in vitae magni reprehenderit saepe ea aliquam molestias sapiente dolorum libero
+                    alias
+                    repudiandae animi quaerat reiciendis maiores sequi eaque itaque ducimus, deserunt deleniti nesciunt
+                    quasi. Blanditiis.</p>
+                <p>Rerum inventore nesciunt, adipisci numquam obcaecati provident? Deserunt molestiae magnam illum
+                    voluptates incidunt provident ipsa laudantium commodi autem hic. Cupiditate adipisci maxime,
+                    incidunt ea
+                    suscipit tempora totam temporibus! Deleniti, mollitia.</p>
+
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/1200/300?random=21" alt="">
+            <div class="txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid quam, beatae doloremque
+                harum
+                quis
+                qui praesentium, illo cupiditate corrupti esse nam hic quisquam eveniet! Sint facere maiores sapiente
+                corrupti.
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/1200/300?random=21" alt="">
+            <div class="txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid quam, beatae doloremque
+                harum
+                quis
+                qui praesentium, illo cupiditate corrupti esse nam hic quisquam eveniet! Sint facere maiores sapiente
+                corrupti.
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/1200/300?random=21" alt="">
+            <div class="txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid quam, beatae doloremque
+                harum
+                quis
+                qui praesentium, illo cupiditate corrupti esse nam hic quisquam eveniet! Sint facere maiores sapiente
+                corrupti.
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/1200/300?random=21" alt="">
+            <div class="txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid quam, beatae doloremque
+                harum
+                quis
+                qui praesentium, illo cupiditate corrupti esse nam hic quisquam eveniet! Sint facere maiores sapiente
+                corrupti.
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/1200/300?random=21" alt="">
+            <div class="txt">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquid quam, beatae doloremque
+                harum
+                quis
+                qui praesentium, illo cupiditate corrupti esse nam hic quisquam eveniet! Sint facere maiores sapiente
+                corrupti.
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+<footer></footer>
+
+</html>
